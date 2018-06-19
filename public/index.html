@@ -34,8 +34,25 @@
       </li>
     </ul>
 
+    <div>
+      Review: <input v-model="newReview.text">
+      Rating: <input v-model="newReview.rating">
+      Your Name: <input v-model="newReview.reviewer">
+      <button v-on:click="addReview()">Add Review</button>
+    </div>
+
   </div>
 </template>
+
+
+
+
+
+
+
+
+
+
 
 
 

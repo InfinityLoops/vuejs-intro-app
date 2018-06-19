@@ -19,11 +19,25 @@ var HomePage = {
                   rating: 2,
                   text: "Vue.js sucks"
                 }
-                ]
+                ],
+      newReview: {
+                  text: "",
+                  reviewer: "",
+                  rating: ""
+                  }
     };
   },
   created: function() {},
-  methods: {},
+  methods: {
+    addReview: function() {
+      var newReviewInfo = {
+                           text: this.newReview.text,
+                           reviewer: this.newReview.reviewer,
+                           rating: this.newReview.rating
+                          };
+      this.reviews.push(newReviewInfo);
+    }
+  },
   computed: {}
 };
 
@@ -38,3 +52,31 @@ var app = new Vue({
   el: "#vue-app",
   router: router
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
