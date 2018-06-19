@@ -36,6 +36,9 @@ var HomePage = {
                            rating: this.newReview.rating
                           };
       this.reviews.push(newReviewInfo);
+    },
+    isPositive: function(inputReview) {
+      return inputReview.text.indexOf('sucks') === -1;
     }
   },
   computed: {}
