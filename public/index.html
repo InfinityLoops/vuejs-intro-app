@@ -20,8 +20,38 @@
 <template id="home-page">
   <div class="vue-component">
 
-    <h1>{{ message }}</h1>
-    <p>{{ message2 }}</p>
+
+    <h1>Intro to Vue.js</h1>
+
+    <p>{{ message }}</p>
+    <input v-model="message">
+
+    <h2>Reviews</h2>
+
+    <ul>
+      <li v-for="review in reviews">
+        {{ review.rating }} STARS - {{ review.reviewer }}: {{ review.text }}
+      </li>
+    </ul>
 
   </div>
 </template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

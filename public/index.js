@@ -5,7 +5,21 @@ var HomePage = {
   data: function() {
     return {
       message: "Let's get started with Vue.js!",
-      message2: "Let me go to the page too!"
+      reviews: [
+                { 
+                  reviewer: "James McAvery",
+                  rating: 5,
+                  text: "Vue.js is soooooo coooool"
+                },{ 
+                  reviewer: "Einstien",
+                  rating: 4,
+                  text: "Vue.js is not a bad alternative to vanilla js."
+                },{ 
+                  reviewer: "Delbert McClinton",
+                  rating: 2,
+                  text: "Vue.js sucks"
+                }
+                ]
     };
   },
   created: function() {},
